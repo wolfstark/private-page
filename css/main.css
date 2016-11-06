@@ -266,11 +266,59 @@ footer {
 .copy {
     padding-bottom: 20px;
 }
-
 .main-wrapper {
     background: #444 url(../img/banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.mask{
+    display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.3);
+}
+.siderbar {
+    width: 300px;
+    background: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 0;
+    -webkit-transform: translate(300px,0);
+    -ms-transform: translate(300px,0);
+    -o-transform: translate(300px,0);
+    transform: translate(300px,0);
+    transition: transform 0.5s;
+}
+
+.siderbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.siderbar ul a {
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    width: 100%;
+}
+
+.siderbar ul a:hover {
+   background: #444;
+}
+.back-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid #888;
+    display: none;
 }
